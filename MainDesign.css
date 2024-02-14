@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #283747;
+}
+
+.keysyscontainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: #100845;
+  padding-inline: 10%;
+  box-shadow: 0px 0px 20px #0d0449;
+}
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 50px;
+  width: 90px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links a {
+  font-size: 30px;
+  color: white;
+  margin-inline: 20px;
+  transition: all ease 0.5s;
+}
+.links a:first-child:hover {
+  color: #316ff6;
+  margin-inline: 20px;
+  transform: scale(1.2);
+}
+
+.links a:nth-child(2):hover {
+  color: #25d366;
+  margin-inline: 20px;
+  transform: scale(1.2);
+}
+
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 35px;
+  position: relative;
+}
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #0c3149;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+.countdown {
+  position: relative;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+   /* margin-top: -48px; */
+  margin-left: -70px; 
+}
+
+.completed{
+  color: green;
+  font-size: 25px;
+  
+}
+.total{
+  color: rgba(255, 217, 0, 0.959);
+  /* font-size: 25px; */
+
+}
+.result{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.result .title{
+  margin-inline: 10px;
+}
+
+.show{
+  color: white;
+
+}
+
+.time{
+  color: #25d366;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.button {
+  margin-left: 10px;
+  width: 250px;
+}
+.nb{
+  display: flex;
+ align-items: center;
+}
+.nb p{
+  margin-left: 5px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.key {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.bold {
+  font-weight: 400;
+  color: white;
+}
+
+.Copy {
+  background-color: #6118ba;
+}
+
+.keysyscontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+
+}
+
+.key-box{
+    border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
